@@ -12,6 +12,8 @@ var squadOnePostOneSecond = $('#squadOnePostOneSecond').val();
 
 // Constructor function for building the shooter object
 function shooter(firstName, lastName, f25, s25) {
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.first25 = f25;
     this.second25 = s25;
     this.total = function(f25, s25){
@@ -26,4 +28,4 @@ $("#squadOnePostOneSecond").change(function(){
     $("#squadOnePostOneTotal").html(function(){
         return squadOnePostOneTotal;
     });
-});  
+});
